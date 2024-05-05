@@ -4,31 +4,30 @@ import './semantic/dist/semantic.min.css'
 import { Routes, Route, useNavigate } from 'react-router-dom';
 
 import { useUser } from "./context/user";
-import { useAdmin } from "./context/admin.js"
+import { useAdmin } from "./context/admin.jsx"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Header from './components/Header.js';
-import PaintingsPage from './components/PaintingsPage.js';
-import HomePage from './components/HomePage.js';
-import ContactPage from './components/ContactPage.js';
-import EventsPage from './components/EventsPage.js';
-import AboutPage from './components/AboutPage.js';
-import Footer from './components/Footer.js';
-import PaintingDetail from './components/PaintingDetail.js';
-import PostDetail from './components/PostDetail.js';
-import AddPost from './components/AddPost.js'
-import LoginForm from './components/Login.js';
-import SignUp from './components/SignUp.js';
-import AddEvent from './components/AddEvent.js';
-import AddPainting from './components/AddPainting.js';
-import EventDetail from './components/EventDetail.js';
-import EditPainting from './components/EditPainting.js';
-import EditPost from './components/EditPost.js';
-import EditEvent from './components/EditEvent.js';
-import User from './components/User.js';
-import logo from './assets/yasi-logo-1.png'
+import Header from './components/Header.jsx';
+import PaintingsPage from './components/PaintingsPage.jsx';
+import HomePage from './components/HomePage.jsx';
+import ContactPage from './components/ContactPage.jsx';
+import EventsPage from './components/EventsPage.jsx';
+import AboutPage from './components/AboutPage.jsx';
+import Footer from './components/Footer.jsx';
+import PaintingDetail from './components/PaintingDetail.jsx';
+import PostDetail from './components/PostDetail.jsx';
+import AddPost from './components/AddPost.jsx'
+import LoginForm from './components/Login.jsx';
+import SignUp from './components/SignUp.jsx';
+import AddEvent from './components/AddEvent.jsx';
+import AddPainting from './components/AddPainting.jsx';
+import EventDetail from './components/EventDetail.jsx';
+import EditPainting from './components/EditPainting.jsx';
+import EditPost from './components/EditPost.jsx';
+import EditEvent from './components/EditEvent.jsx';
+import User from './components/User.jsx';
 
 
 export default function App() {
@@ -68,9 +67,8 @@ export default function App() {
 
   return (
     <div className='ui container'>
-
       <Header onLogout={handleLogout}/>
-      <div style={{marginTop: "75px"}}>
+      <div style={{marginTop: "200px"}}>
       <ToastContainer/>
       <Routes>
           <Route path="/" element={<HomePage />} />

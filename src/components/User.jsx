@@ -11,12 +11,12 @@ export default function User () {
     }
 
     return (
-        <div className="ui middle aligned center aligned grid" style={{minHeight:"100vh"}}>
+        <div className="ui container fluid" style={{minHeight:"100vh"}}>
             {showEdit ? 
             <EditUser setShowEdit={showEditForm}/> 
             :
-            <div className="ui container" style={{marginTop: "5px"}}>
-                <h4 className="ui horizontal divider">My Account</h4>
+            <div className="ui container fluid" style={{marginTop: "75px"}}>
+                <h4 className="ui horizontal divider" >My Account</h4>
                 <div className="ui centered grid">
                     <div className="ui card" style={{margin: "25px"}}>
                         <div className="content" style={{padding: "25px"}}>
